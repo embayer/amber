@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ..
+# alias etf='/Users/mbayer/Workspace/etfetcher/bin/celery -A etfetcher.worker.tasks worker -P eventlet --loglevel=warning -c 1 --hostname=markus.bayer@inquant.de && cd -'
+# celery worker --app=kumpel.celeryapp:app --loglevel=warning
+celery worker --app=kumpel.celeryapp:app -P eventlet --loglevel=warning -c 1

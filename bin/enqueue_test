@@ -1,0 +1,9 @@
+#!/Users/mbayer/Workspace/Envs/kumpel/bin/python
+
+import sys
+sys.path[0:0] = [
+  "/Users/mbayer/Workspace/kumpel"
+  ]
+from kumpel.enqueue import test_queue
+
+test_queue()
